@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 95%}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="logo.png" alt="logo" height="100px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="#" onclick="userdisplay()">Users</a></li>
+        <li><a href="#" onclick="listingdisplay()">Listings</a></li>
+        <li><a href="#" onclick="networth()">Real Estate Net Worth</a></li>
+        <li><a href="#" onclick="advertisement()">Advertisement</a></li>
+        <li><a href="#" onclick="admin()">Admin <i class="fa fa-cog"></i></a></li>
+        <li><a href="#" onclick="reports()">Reports </i> </a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h2><img src="logo.png" alt="logo" height="120px"></h2>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Dashboard</a></li>
+        <li><a href="#" onclick="userdisplay()">Users</a></li>
+        <li><a href="#" onclick="listingdisplay()">Listings</a></li>
+        <li><a href="#" onclick="networth()">Real Estate Net Worth</a></li>
+        <li><a href="#" onclick="advertisement()">Advertisement</a></li>
+        <li><a href="#" onclick="admin()">Admin <i class="fa fa-cog"></i></a></li>
+        <li><a href="#" onclick="reports()">Reports </i> </a></li>
+      </ul><br>
+    </div>
+    <br>
+    
+    <div class="col-sm-9">
+      <div class="well">
+        <h4>Welcome <i class="fa fa-user"></i></h4>
+        <p>Admin_12</p>
+      </div>
+
+
+
+
+<!-- user number display -->
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Users <i class="fa fa-users"></i></h4>
+            <p>1 Million</p> 
+          </div>
+        </div>
+
+
+
+<!-- total listings -->
+
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Landlords <i class="fa fa-building"></i></h4>
+            <p>100 Million</p> 
+          </div>
+        </div>
+
+
+
+
+
+<!-- Estimated net worth -->
+
+
+
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Property Listings <i class="fa fa-money"></i></h4>
+            <p>Nrs:</p> 
+          </div>
+        </div>
+
+
+
+
+        <!--Requests  -->
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Tour Requests</h4>
+            <p>1000</p> 
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- table -->
+
+<div class="table" id="users">
+    <table id="users">
+    <th> First/Middle Name</th>
+    <th>Last Name</th>
+    <th>Address</th>
+    <th>Contact Number</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Action</th>
+
+    <tr>
+        <td>Bishal</td>
+        <td>Raut</td>
+        <td>panauti</td>
+        <td>98986766</td>
+        <td>bishalraut11</td>
+        <td>bishal@gmail.com</td>
+        <td><input type="submit" value="Delete"></td>
+
+
+    </tr>
+
+
+
+
+    <tr>
+      <td>Anzana</td>
+      <td>khatri</td>
+      <td>Banepa</td>
+      <td>92344444</td>
+      <td>anzana12</td>
+      <td>anjana@gmail.com</td>
+      <td><input type="submit" value="Delete"></td>
+
+
+  </tr>
+
+
+
+
+  <tr>
+    <td>Bimesh</td>
+    <td>shrestha</td>
+    <td>banepa</td>
+    <td>92344444</td>
+    <td>bishesh13</td>
+    <td>bimesh@gmail.com</td>
+    <td><input type="submit" value="Delete"></td>
+
+
+</tr>
+    
+</table>
+
+</div>
+
+
+<!-- listings -->
+
+
+
+<div class="list" id="landlords">
+  <table id="users">
+  <th> First/Middle Name</th>
+  <th>Last Name</th>
+  <th>User name</th>
+  <th>Contact Number</th>
+  <th>Status</th>
+  <th>Property Location</th>
+  <th>Property Description</th>
+  <th>Asking Price</th>
+  <th>Email</th>
+  <th>Action</th>
+  </table>
+  </div>
+
+
+
+
+  <!-- real eststed -->
+
+  <div class="networth" id="networth">
+    <table id="users">
+    <th>locations</th>
+    <th>Owner</th>
+    <th>Status</th>
+    <th>Property Description</th>
+    <th>Tour Requests</th>
+    <th>Email</th>
+    <th>Action</th>
+    </table>
+    </div>
+
+
+
+    <!-- To push advertisement -->
+
+
+    <div class="advertisement" id="add">
+        
+      <form action="">
+
+          <label for="img">Select image:</label>
+          <input type="file" id="img" name="img" accept="image/*"><br>
+
+
+          <textarea name="" id="" cols="100" rows="10" placeholder="Enter the advertisement descrition"></textarea><br>
+
+          <input type="submit" value="Post add" name="add">
+
+
+      </form>
+
+    </div>
+
+ <!-- Add admin -->
+
+
+    <div class="admin" id="adminconfig">
+       <a href="#" onclick="addadmin()">Add admin</a><br>
+      <div class="add_admin" id="add_admin">
+        <form action="">
+          <label for="Username">Admin User_Name</label><br>
+            <input type="text" name="adminuser" id="" placeholder="admin_username" required><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="pass" id="pass" placeholder="Password" required><br>
+            <label for="password"> Confirm Password</label><br>
+            <input type="password" name="cpass" id="pass" placeholder=" Confirm Password" required><br>
+            <br>
+            <input type="submit" value="Create Admin">
+
+
+        </form>
+        
+        
+      </div>
+
+
+
+      <br>
+      <div class="admintable">
+  
+      <table id="users" class="admintable">
+        <th> Admin Name</th>
+        <th>Action</th>
+
+
+        <tr>
+          <td>Admin_12</td>
+          <td><input type="submit" value="Remove admin"></td>
+        </td>
+        </table>
+      </div>
+  
+
+    </div>
+<!-- Reports -->
+<div class="reports" id="reports">
+  <table id="users">
+    <th>Reported By:</th>
+    <th>Reported Against</th>
+    <th>Reason For Report</th>
+    </table>
+
+  
+
+</div>
+<script>
+  function userdisplay(){
+    document.getElementById("networth").style.display="none";
+    document.getElementById("users").style.display="block";
+    document.getElementById("landlords").style.display="none";
+    document.getElementById("add").style.display="none";
+    document.getElementById("adminconfig").style.display="none";
+    document.getElementById("reports").style.display="none";
+
+
+  }
+
+
+
+  function listingdisplay(){
+    document.getElementById("landlords").style.display="block";
+    document.getElementById("users").style.display="none";
+    document.getElementById("networth").style.display="none";
+    document.getElementById("add").style.display="none";
+    document.getElementById("adminconfig").style.display="none";
+    document.getElementById("reports").style.display="none";
+
+
+  }
+function networth(){
+
+
+
+    document.getElementById("networth").style.display="block";
+  
+    document.getElementById("landlords").style.display="none";
+    document.getElementById("users").style.display="none";
+    document.getElementById("add").style.display="none";
+    document.getElementById("adminconfig").style.display="none";
+    document.getElementById("reports").style.display="none";
+
+
+
+  }
+
+
+
+  function advertisement(){
+    document.getElementById("networth").style.display="none";
+    document.getElementById("landlords").style.display="none";
+    document.getElementById("users").style.display="none";
+    document.getElementById("add").style.display="block";
+    document.getElementById("adminconfig").style.display="none";
+    document.getElementById("reports").style.display="none";
+
+
+
+
+  }
+
+
+  function admin(){
+    document.getElementById("networth").style.display="none";
+    document.getElementById("landlords").style.display="none";
+    document.getElementById("users").style.display="none";
+    document.getElementById("add").style.display="none";
+    document.getElementById("adminconfig").style.display="block";
+    document.getElementById("reports").style.display="none";
+
+
+  }
+
+
+  function reports(){
+    document.getElementById("networth").style.display="none";
+    document.getElementById("landlords").style.display="none";
+    document.getElementById("users").style.display="none";
+    document.getElementById("add").style.display="none";
+    document.getElementById("adminconfig").style.display="none";
+    document.getElementById("reports").style.display="block";
+
+
+  }
+
+  //admin
+  function addadmin(){
+    document.getElementById("add_admin").style.display="block";
+  }
+</script>
+</body>
+</html>
+</body>
+</html>
